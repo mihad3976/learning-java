@@ -3,8 +3,7 @@ import java.util.Scanner;
 class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println(
-				"What do you wish to calculate?\n1 - Area of a triangle\n2 - Area of a circle\n3 - Volume of a pyramid\n4 - Speed of object");
+		System.out.println("What do you wish to calculate?\n1 - Area of a triangle\n2 - Area of a circle\n3 - Volume of a pyramid\n4 - Speed of object");
 		int selection = input.nextInt();
 
 		switch (selection) {
