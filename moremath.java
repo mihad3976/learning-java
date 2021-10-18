@@ -19,6 +19,7 @@ public class moremath {
           input.close();
           int nNumber = userNumber * userNumber;
           System.out.println("\033[0;32m" + userNumber + "\033[0m squared is \033[0;32m" + nNumber);
+          break;
         }
       case 2:
         {
@@ -29,9 +30,32 @@ public class moremath {
           input.close();
           int nNumber = userNumber * userNumber * userNumber;
           System.out.println("\033[0;32m" + userNumber + "\033[0m cubed is \033[0;32m" + nNumber);
+          break;
         }
       case 3:
-        {}
+        {
+          System.out.println(
+            "\033[0;36mYou have selected to find the value of a number with your own power.\nPlease enter a number\033[0;33m"
+          );
+          int userNumber = input.nextInt();
+          System.out.println("\033[0;36mPlease enter a power\033[0;33m");
+          int userPower = input.nextInt();
+          int newNumber = 1;
+
+          for (int i = 0; i < userPower; i++) {
+            newNumber *= userNumber;
+          }
+
+          System.out.println(
+            "\033[0;32m" +
+            userNumber +
+            "\033[0m to the power of \033[0;32m" +
+            userPower +
+            "\033[0m is \033[0;32m" +
+            newNumber
+          );
+          break;
+        }
       case 4:
         {
           input.close();
