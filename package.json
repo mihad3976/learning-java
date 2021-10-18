@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "prettier-plugin-java": "^1.5.0"
+  },
+  "scripts": {
+    "build": "javac *.java"
   }
 }
