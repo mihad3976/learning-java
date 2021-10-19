@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class selection {
+class firstselection {
 
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
