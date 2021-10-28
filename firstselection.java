@@ -6,8 +6,9 @@ class firstselection {
     Scanner input = new Scanner(System.in);
     System.out.println("\033[0;36mPlease enter the amount spent\033[0;33m");
     double userInput = input.nextDouble();
+    //System.out.println(userInput);
 
-    if (userInput > 0.01 && userInput < 40.00) {
+    if (userInput >= 0.01 && userInput <= 40.00) {
       input.close();
       double saves = (double) Math.round((userInput * (10 / 100.0f)) * 100.0) / 100.0;
       System.out.println(
@@ -18,7 +19,7 @@ class firstselection {
         "\033[0m!\nYour new total is \033[0;32m$" +
         (Math.round((userInput - saves) * 100.0) / 100.0)
       );
-    } else if (userInput > 40.01 && userInput < 80.00) {
+    } else if (userInput >= 40.01 && userInput <= 80.00) {
       input.close();
       double saves = (double) Math.round((userInput * (20 / 100.0f)) * 100.0) / 100.0;
       System.out.println(
@@ -29,7 +30,7 @@ class firstselection {
         "\033[0m!\nYour new total is \033[0;32m$" +
         (Math.round((userInput - saves) * 100.0) / 100.0)
       );
-    } else if (userInput > 80.01 && userInput < 120.00) {
+    } else if (userInput >= 80.01 && userInput <= 120.0) {
       input.close();
       double saves = (double) Math.round((userInput * (30 / 100.0f)) * 100.0) / 100.0;
       System.out.println(
@@ -40,7 +41,7 @@ class firstselection {
         "\033[0m!\nYour new total is \033[0;32m$" +
         (Math.round((userInput - saves) * 100.0) / 100.0)
       );
-    } else if (userInput > 120.01) {
+    } else if (userInput >= 120.01) {
       input.close();
       double saves = (double) Math.round((userInput * (40 / 100.0f)) * 100.0) / 100.0;
       System.out.println(
