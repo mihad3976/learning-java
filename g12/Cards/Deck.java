@@ -15,6 +15,9 @@ public class Deck {
         this.makeSuite("Diamonds");
     }
 
+    // Getters Start
+    // Getters Start
+
     private void makeSuite(String suit) {
         for (int i = 1; i < 13; i++) {
             Card c = new Card(i, suit);
@@ -22,4 +25,6 @@ public class Deck {
             this.cardsLeft++;
         }
     }
+
+    
 }
