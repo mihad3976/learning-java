@@ -33,4 +33,30 @@ public class Card {
     }
     // Setters End
 
+    public String toString() {
+        String cardText = "";
+        switch (this.value) {
+            case 1: {
+                cardText = "Ace";
+                break;
+            }
+            case 11: {
+                cardText = "Jack";
+                break;
+            }
+            case 12: {
+                cardText = "Queen";
+                break;
+            }
+            case 13: {
+                cardText = "King";
+                break;
+            }
+            default: {
+                cardText = "" + this.value;
+                break;
+            }
+        }
+        return (this.isFaceUp() ? cardText + " of " + this.suit : "\033[1;31mCard is faced down.\033[0m");
+    }
 }

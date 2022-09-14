@@ -12,9 +12,12 @@ public class CardTest {
         Card[] cardsnsuch = { c1, c2, c3, c4 };
 
         for (Card card : cardsnsuch) {
-            System.out.println(
-                    "Card #" + card.getValue() + " Suite: " + card.getSuit() + " Is flipped? "
-                            + (card.isFaceUp() ? "Yes" : "No"));
+            System.out.println(card.toString());
+            /*
+             * System.out.println(
+             * "Card #" + card.getValue() + " Suite: " + card.getSuit() + " Is flipped? "
+             * + (card.isFaceUp() ? "\033[1;32mYes\033[0m" : "\033[1;31mNo\033[0m"));
+             */
         }
     }
 }
