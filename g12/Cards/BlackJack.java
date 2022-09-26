@@ -25,10 +25,11 @@ public class BlackJack {
         System.out.println("Player Total: " + dealerTotal);
 
         int option = 0;
-        Scanner input new Scanner(System.in);
-        while(option != 1) {
+        Scanner input = new Scanner(System.in);
+        while (option != 1) {
             System.out.println("x");
         }
+        input.close();
 
     }
 }
